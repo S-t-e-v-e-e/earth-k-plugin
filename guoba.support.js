@@ -58,7 +58,7 @@ export function supportGuoba() {
           required: false,
           componentProps: {
             placeholder: '请输入API key',
-            autoSize: true,
+            autoSize: { minRows: 1, maxRows: 6 },
           },
         },
         {
@@ -69,7 +69,7 @@ export function supportGuoba() {
           required: false,
           componentProps: {
             placeholder: '请输入Secret key',
-            autoSize: true,
+            autoSize: { minRows: 1, maxRows: 6 },
           },
         },
         {
@@ -101,7 +101,7 @@ export function supportGuoba() {
           component: 'InputTextArea',
           required: false,
           componentProps: {
-            autoSize: true,
+            autoSize: { minRows: 1, maxRows: 6 },
             placeholder: '请输入cookie',
           },
         }
